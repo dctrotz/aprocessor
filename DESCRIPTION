@@ -1,6 +1,6 @@
 Package: aprocessor
 Title: Coerces the various Android version numbers into sanity for analysis
-Version: 0.9.0
+Version: 0.9.1
 Authors@R: person("David", "Trotz", email = "david.trotz@harpercollins.com", role = c("aut", "cre"))
 Description: Provides methods to process Android version information from Flurry and other sources to something more consistent for analysis.
 Depends: R (>= 3.4.3)
