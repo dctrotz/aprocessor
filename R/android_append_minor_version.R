@@ -1,12 +1,15 @@
 #' Fix invalid android version strings with assumed values
 #' 
 #' This function attmepts to fix invalid android version strings that are a 
-# single number. The fix makes the assumption that the number represents the
+#' single number. The fix makes the assumption that the number represents the
 #' major version number of the release.  However, prior to Android 5.0 the major 
 #' version number was shared across a number of releases:
 #' i.e. 4.0 Ice Cream Sandwich, 4.1 Jellybean, and 4.4 KitKat.
 #' See \href{https://source.android.com/setup/build-numbers}{Android: Codenames, Tags, and Build Numbers}
 #' @param version_string A string indicating the major version number to be fixed
+#' @param snap_to_min A logical value indicating whether the version number 
+#' should snap to the minimum version for the given major value otherwise it
+#' will snap to the latest known version for the major version number provided.
 #' @keywords android, version
 #' @export
 #' @examples 
