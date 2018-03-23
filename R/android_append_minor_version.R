@@ -16,7 +16,7 @@
 #' android_version_append_minor_version("5")
 #' [1] "5.1.1"
 
-android_version_append_minor_version <- function(version_string, snap_to_min = FALSE) {
+android.version_append_minor_version <- function(version_string, snap_to_min = FALSE) {
 	if (version_string == "5") {
 		if(snap_to_min) {
 			"5.0"
