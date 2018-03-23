@@ -3,14 +3,14 @@
 #' This function maps a given version number to a release name.  This is very 
 #' specific to only official Android releases. See \href{https://source.android.com/setup/build-numbers}{Android: Codenames, Tags, and Build Numbers}
 #' For example: `6.0` becomes: `marshmallow`
-#' @param version_number A string indicating the version number to be mapped to a release name
+#' @param version_string A string indicating the version number to be mapped to a release name
 #' @keywords android, version
 #' @export
 #' @examples 
 #' android_extract_version_number("4.4")
 #' [1] "kitkat"
 
-map_version_number_to_android_codename <- function(version_number) {
+map_version_number_to_android_codename <- function(version_string) {
     if(str_detect(version_number, "^[^0-9]*1\\.6(\\.[0-9])?")) {
         "donut"
     } else if(str_detect(version_number, "^[^0-9]*2\\.[0-1](\\.[0-9])?")) {
