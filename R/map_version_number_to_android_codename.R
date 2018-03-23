@@ -11,9 +11,7 @@
 #' [1] "kitkat"
 
 map_version_number_to_android_codename <- function(version_number) {
-    if(str_detect(version_number, "^[^0-9]*4\\.4(\\.[0-9])?")) {
-        "kitkat"
-    } else if(str_detect(version_number, "^[^0-9]*1\\.6(\\.[0-9])?")) {
+    if(str_detect(version_number, "^[^0-9]*1\\.6(\\.[0-9])?")) {
         "donut"
     } else if(str_detect(version_number, "^[^0-9]*2\\.[0-1](\\.[0-9])?")) {
         "eclair"
